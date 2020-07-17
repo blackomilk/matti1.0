@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 const Home = () => (
   <div className="container">
@@ -9,7 +10,9 @@ const Home = () => (
 
     <main>
       <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
+        {/* Welcome to <a href="https://nextjs.org">Next.js!</a> */}
+        Read <Link href="/post/first-post"><a>this page!</a></Link>
+
       </h1>
 
       <p className="description">
