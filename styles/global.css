@@ -161,10 +161,10 @@
     .body-main-page-one-bottomUp-logo:hover::after { 
       background-position: 170px 170px;
     }
-    .body-main-page-one-bottomUp-logo:active {
+    /* .body-main-page-one-bottomUp-logo:active {
       -webkit-transform:scale(0.01) rotate(360deg);
       transform:scale(0.01) rotate(360deg);
-    }
+    } */
     .body-main-page-one-bottomUp-title p:first-child {
       font-size: 5em;
       color: transparent;
