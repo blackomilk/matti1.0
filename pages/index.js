@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import React, { Component,useState } from 'react'
+import React, { useState } from 'react'
 
 
 const Home = () => {
