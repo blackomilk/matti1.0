@@ -415,12 +415,12 @@
   }
   .section3 .ui_base {
     position: relative;
-    top: 230px;
-    left: 280px;
+    top: 110px;
+    left: 270px;
     width: 400px;
     height: 0px;
-    perspective: 1000px;
-    perspective-origin: 50% 0;
+    perspective: 700px;
+    perspective-origin: 50% top;
   }
   .u_p3d {
     transform-style: preserve-3d;
@@ -436,8 +436,8 @@
     top: 100px;
   }
   .section3 .base {
-    animation: cir 28s linear 0s infinite;
-    transform: rotateX(80deg) rotateY(0deg);
+    animation: cir 18s linear 0s infinite;
+    transform: rotateX(80deg) rotateY(-10deg);
     position: relative;
     width: 350px;
     height: 350px;
@@ -465,7 +465,7 @@
     height: 127px;
   }
   .section3 .ball_1 .ball {
-    animation: cir1 28s linear 0s infinite;
+    animation: cir1 18s linear 0s infinite;
     transition-delay: 1100ms;
     transform: rotateY(10deg) rotateZ(10deg);
   }
@@ -486,17 +486,17 @@
     }
   }
   .section3 .ball img {
-    width: 110px;
-    height: 110px;
+    width: 35px;
+    height: 35px;
     vertical-align: middle;
     border: 0;
-    border-radius: 55px;
+    border-radius: 17px;
   }
   .section3 .ball_2 {
     transform: rotateX(-90deg) rotateY(60deg) translateY(-70px);
   }
   .section3 .ball_2 .ball {
-    animation: cir2 28s linear 0s infinite;
+    animation: cir2 18s linear 0s infinite;
   }
   .section3 .ball_2 .ball {
     transition-delay: 900ms;
@@ -515,7 +515,7 @@
     transform: rotateX(-90deg) rotateY(120deg) translateY(-70px);
   }
   .section3 .ball_3 .ball {
-    animation: cir3 28s linear 0s infinite;
+    animation: cir3 18s linear 0s infinite;
     transition-delay: 700ms;
     transform: rotateY(-110deg) rotateZ(10deg);
   }
@@ -531,7 +531,7 @@
     transform: rotateX(-90deg) rotateY(180deg) translateY(-70px);
   }
   .section3 .ball_4 .ball {
-    animation: cir4 28s linear 0s infinite;
+    animation: cir4 18s linear 0s infinite;
     transition-delay: 500ms;
     transform: rotateY(-170deg) rotateZ(10deg);
   }
@@ -547,7 +547,7 @@
     transform: rotateX(-90deg) rotateY(240deg) translateY(-70px);
   }
   .section3 .ball_5 .ball {
-    animation: cir5 28s linear 0s infinite;
+    animation: cir5 18s linear 0s infinite;
     transition-delay: 300ms;
     transform: rotateY(-230deg) rotateZ(10deg);
   }
@@ -563,7 +563,7 @@
     transform: rotateX(-90deg) rotateY(300deg) translateY(-70px);
   }
   .section3 .ball_6 .ball {
-    animation: cir6 28s linear 0s infinite;
+    animation: cir6 18s linear 0s infinite;
     transition-delay: 100ms;
     transform: rotateY(-290deg) rotateZ(10deg);
   }

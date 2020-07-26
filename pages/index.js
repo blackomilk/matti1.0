@@ -286,7 +286,7 @@ const Home = () => {
                               </div>
                               <div className="ball_base u_p3d ball_2">
                               <div className="ball">
-                                <img src="/matti.png"></img>
+                                <img src="/wc.jpeg"></img>
                                 </div>
                               </div>
                               <div className="ball_base u_p3d ball_3">
