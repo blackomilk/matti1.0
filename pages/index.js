@@ -254,7 +254,6 @@ const Home = () => {
                 </div>
               </div>
               <div className="body-main-page-four-projects">
-
               </div>
               <div className="body-main-page-four-footer">
                 <div>
@@ -273,7 +272,49 @@ const Home = () => {
                 </div>
               </div>
               <div className="body-main-page-five-connect">
-                  
+                  <div className="pr">
+                    <div className="con_bg">
+                      <div className="section3">
+                        <div className="u_fr">
+                          <div className="ui_base u_p3d">
+                            <div className="ball_c"></div>
+                            <div className="base u_p3d">
+                              <div className="ball_base u_p3d ball_1">
+                                <div className="ball">
+                                  <img src="/qqcode.jpg"></img>
+                                </div>
+                              </div>
+                              <div className="ball_base u_p3d ball_2">
+                              <div className="ball">
+                                <img src="/matti.png"></img>
+                                </div>
+                              </div>
+                              <div className="ball_base u_p3d ball_3">
+                              <div className="ball">
+                                 <img src="/mattti.png"></img>
+                                </div>
+                              </div>
+                              <div className="ball_base u_p3d ball_4">
+                              <div className="ball">
+                                 <img src="/next.jpg"></img>
+                                </div>
+                              </div>
+                              <div className="ball_base u_p3d ball_5">
+                              <div className="ball">
+                                  <img src="/es6.jpg"></img>
+                                </div>
+                              </div>
+                              <div className="ball_base u_p3d ball_6">
+                              <div className="ball">
+                                  <img src="/bootstrap.png"></img>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
               <div className="body-main-page-five-footer">
                 <div>

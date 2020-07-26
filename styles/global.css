@@ -233,11 +233,22 @@
   .body-main-page-two,.body-main-page-three div {
     background-color: transparent;
   }
-  .body-main-page-two {
+  .body-main-page-two,
+  .body-main-page-three,
+  .body-main-page-four,
+  .body-main-page-five {
     position: relative;
     height: 100%;
     width: 100%;
     top: calc(100% - 70px);
+  }
+  .body-main-page-two div,
+  .body-main-page-three div,
+  .body-main-page-four div,
+  .body-main-page-five div {
+    background-color: transparent;
+  }
+  .body-main-page-two {
     background-image: url('../public/88347.jpg');
   }
   .body-main-page-two-bottom {
@@ -245,7 +256,6 @@
     height: 100%;
     margin: 0 auto;
     position: relative;
-    background-color: transparent;
   }
   .body-main-page-two-bottomUp-about {
     position: relative;
@@ -264,15 +274,11 @@
     text-align: center;
   }
   .body-main-page-three {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    top: calc(100% - 70px);
     background-image: url('../public/495521.jpg');
   }
   .body-main-page-three-bottom,
   .body-main-page-four-bottom,
-  .body-main-page-four-bottom {
+  .body-main-page-five-bottom {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -280,7 +286,7 @@
   .body-main-page-three-title,
   .body-main-page-four-title,
   .body-main-page-five-title {
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 7%;
   }
@@ -299,10 +305,10 @@
   .body-main-page-three-skills,
   .body-main-page-four-projects,
   .body-main-page-five-connect {
-    min-width: 600px;
+    /* min-width: 600px; */
     /* max-width: 1024px; */
-    margin: 15% auto;
-    position: absolute;
+    margin: 7% auto;
+    position: relative;
     width: 100%;
     height: 50%;
   }
@@ -390,25 +396,184 @@
     background-clip: text;
     -webkit-background-clip: text;
   }
-  .body-main-page-four div {
-    background-color: transparent;
-  }
   .body-main-page-four {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    top: calc(100% - 70px);
     background-image: url('../public/792513.jpg');
   }
-  .body-main-page-five div {
-    background-color: transparent;
-  }
   .body-main-page-five {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    top: calc(100% - 70px);
     background-image: url('../public/127957.jpg');
+  }
+  .pr {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .section3 {
+    width: 1000px;
+    height: 680px;
+    margin: 40px auto 0px;
+    background: url(/public/147_03.png) 32px 65px no-repeat;
+  }
+  .section3 .ui_base {
+    position: relative;
+    top: 230px;
+    left: 280px;
+    width: 400px;
+    height: 0px;
+    perspective: 1000px;
+    perspective-origin: 50% 0;
+  }
+  .u_p3d {
+    transform-style: preserve-3d;
+  }
+  .section3 .ball_c {
+    transform-origin: 50% 50%;
+    position: absolute;
+    width: 225px;
+    height: 157px;
+    line-height: 157px;
+    text-align: center;
+    left: 90px;
+    top: 100px;
+  }
+  .section3 .base {
+    animation: cir 28s linear 0s infinite;
+    transform: rotateX(80deg) rotateY(0deg);
+    position: relative;
+    width: 350px;
+    height: 350px;
+    backface-visibility: hidden;
+    top: -38px;
+    left: 40px;
+  }
+  @keyframes cir {
+    0% {
+      transform: rotateX(80deg) rotateY(-10deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(80deg) rotateY(-10deg) rotateZ(-360deg);
+    }
+  }
+  .section3 .ball_1 {
+    transform: rotateX(-90deg) rotateY(0deg) translateY(-70px);
+  }
+  .section3 .ball_base {
+    transform-origin: 225px 0px;
+    position: absolute;
+    top: 175px;
+    left: -50px;
+    width: 225px;
+    height: 127px;
+  }
+  .section3 .ball_1 .ball {
+    animation: cir1 28s linear 0s infinite;
+    transition-delay: 1100ms;
+    transform: rotateY(10deg) rotateZ(10deg);
+  }
+  .section3 .ball {
+    transition: all 2s ease-out 0ms;
+    transform-origin: 50% 50%;
+    position: absolute;
+    left: -200px;
+    top: -30px;
+    overflow: hidden;
+  }
+  @keyframes cir1 {
+    0% {
+      transform: rotateY(0deg) rotateZ(10deg);
+    }
+    100% {
+      transform: rotateY(-360deg) rotateZ(10deg);
+    }
+  }
+  .section3 .ball img {
+    width: 110px;
+    height: 110px;
+    vertical-align: middle;
+    border: 0;
+    border-radius: 55px;
+  }
+  .section3 .ball_2 {
+    transform: rotateX(-90deg) rotateY(60deg) translateY(-70px);
+  }
+  .section3 .ball_2 .ball {
+    animation: cir2 28s linear 0s infinite;
+  }
+  .section3 .ball_2 .ball {
+    transition-delay: 900ms;
+    transform: rotateY(-50deg) rotateZ(10deg);
+
+  }
+  @keyframes cir2 {
+    0% {
+      transform: rotateY(-60deg) rotateZ(10deg);
+    }
+    100% {
+      transform: rotateY(-420deg) rotateZ(10deg);
+    }
+  }
+  .section3 .ball_3 {
+    transform: rotateX(-90deg) rotateY(120deg) translateY(-70px);
+  }
+  .section3 .ball_3 .ball {
+    animation: cir3 28s linear 0s infinite;
+    transition-delay: 700ms;
+    transform: rotateY(-110deg) rotateZ(10deg);
+  }
+  @keyframes cir3 {
+    0% {
+      transform: rotateY(-120deg) rotateZ(10deg);
+    }
+    100% {
+      transform: rotateY(-480deg) rotateZ(10deg);
+    }
+  }
+  .section3 .ball_4 {
+    transform: rotateX(-90deg) rotateY(180deg) translateY(-70px);
+  }
+  .section3 .ball_4 .ball {
+    animation: cir4 28s linear 0s infinite;
+    transition-delay: 500ms;
+    transform: rotateY(-170deg) rotateZ(10deg);
+  }
+  @keyframes cir4 {
+    0% {
+      transform: rotateY(-180deg) rotateZ(10deg);
+    }
+    100% {
+      transform: rotateY(-540deg) rotateZ(10deg);
+    }
+  }
+  .section3 .ball_5 {
+    transform: rotateX(-90deg) rotateY(240deg) translateY(-70px);
+  }
+  .section3 .ball_5 .ball {
+    animation: cir5 28s linear 0s infinite;
+    transition-delay: 300ms;
+    transform: rotateY(-230deg) rotateZ(10deg);
+  }
+  @keyframes cir5 {
+    0% {
+      transform: rotateY(-240deg) rotateZ(10deg);
+    }
+    100% {
+      transform: rotateY(-600deg) rotateZ(10deg);
+    }
+  }
+  .section3 .ball_6 {
+    transform: rotateX(-90deg) rotateY(300deg) translateY(-70px);
+  }
+  .section3 .ball_6 .ball {
+    animation: cir6 28s linear 0s infinite;
+    transition-delay: 100ms;
+    transform: rotateY(-290deg) rotateZ(10deg);
+  }
+  @keyframes cir6 {
+    0% {
+      transform: rotateY(-300deg) rotateZ(10deg);
+    }
+    100% {
+      transform: rotateY(-660deg) rotateZ(10deg);
+    }
   }
   .swiper-pagination {
     display: flex;
@@ -423,7 +588,4 @@
     text-align: center;
     transition: opacity .3s;
     color: #fff;
-  }
-  footer {
-    height: 0px;
   }
