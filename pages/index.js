@@ -1,13 +1,39 @@
 import Head from 'next/head'
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import Link from 'next/link'
 import Typed from 'typed.js'
+import Swiper from 'swiper'
 
 
 const Home = () => {
   const [musicImg,setmusicImg] = useState('/timg.jpeg');
 
-  // a()
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical', // 垂直切换选项
+    // loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    // pagination: '.swiper-pagination',
+    // paginationClickable: true,
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })        
+
+    useEffect(() => {
+      mySwiper;
+    },[mySwiper]);
+
   const PageText = () => {
         const option = {
           strings: ["-您好，我叫司勇行"],
@@ -389,14 +415,16 @@ const Home = () => {
             </div>
             </div>
           </div>
+          <div className="swiper-pagination">
+            {/* <span className="swiper-pagination-bullet"></span>
+            <span className="swiper-pagination-bullet"></span>
+            <span className="swiper-pagination-bullet"></span>
+            <span className="swiper-pagination-bullet"></span>
+            <span className="swiper-pagination-bullet"></span> */}
+        </div>   
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
         </div>
-        {/* <div className="swiper-pagination">
-            <span className="swiper-pagination-bullet">aaa</span>
-            <span className="swiper-pagination-bullet">aaa</span>
-            <span className="swiper-pagination-bullet">aaa</span>
-            <span className="swiper-pagination-bullet">aaa</span>
-            <span className="swiper-pagination-bullet">aaa</span>
-        </div>    */}
     </main>
     <footer></footer>     
    </>
