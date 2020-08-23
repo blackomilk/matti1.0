@@ -1,11 +1,50 @@
 import Head from 'next/head'
 import React, { useState } from 'react'
+import Link from 'next/link'
+import Typed from 'typed.js'
 
 
 const Home = () => {
   const [musicImg,setmusicImg] = useState('/timg.jpeg');
 
   // a()
+  const PageText = () => {
+        const option = {
+          strings: ["-您好，我叫司勇行"],
+          typeSpeed: 80,
+          showCursor: false,
+        }
+        const options = {
+          strings: ["一名行走在前端路上的程序猿，自然交互，恰当视觉，渴望打造一款还不错的产品与您分享"],
+          typeSpeed: 80,
+          showCursor: false,
+          startDelay: 1000 // 延时一秒后在执行
+        }
+        const optionss = {
+          strings: ["目前就职于国内知名儿童健康管理公司，从事网络运维相关工作，闲暇之余学习前端知识"],
+          typeSpeed: 80,
+          showCursor: false,
+          startDelay: 5500 // 延时一秒后在执行
+
+        }
+        const optionsss = {
+          strings: ["曾经使用React+es6+TypeScrip+Ant Desgin负责某红人项目的管理后台搭建工作"],
+          typeSpeed: 80,
+          showCursor: false,
+          startDelay: 9500 // 延时一秒后在执行
+        }
+        const optionssss = {
+          strings: ["此项目使用Next.js+React搭建"],
+          typeSpeed: 80,
+          showCursor: false,
+          startDelay: 15000 // 延时一秒后在执行
+        }
+        const typed = new Typed(".text", option);
+        const typed2 = new Typed(".text2", options);
+        const typed3 = new Typed(".text3", optionss);
+        const typed4 = new Typed(".text4", optionsss);
+        const typed5 = new Typed(".text5", optionssss);
+    }
   const handleMusicUp = ()  =>{
     const audio = document.getElementById('bgc');
     const img = document.getElementById('bgcm');
@@ -74,10 +113,11 @@ const Home = () => {
                     <strong>- ABOUT ME -</strong>
                   </div>
                   <div className="body-main-page-two-bottomUp-title">
-                    <strong>-您好，我叫司勇行</strong>
-                    <p>一名行走在前端路上的程序猿，拥有对技术和视觉的双重兴趣，渴望打造一款还不错的产品与您分享</p>
-                    <p>目前就职于国内知名儿童健康管理公司，从事网络技术相关工作，闲暇之余学习前端知识</p>
-                    <p>曾经使用React+es6+TypeScrip+Ant Desgin负责某红人项目的管理后台搭建工作</p>
+                    <p className="text"></p>
+                    <p className="text2"></p>
+                    <p className="text3"></p>
+                    <p className="text4"></p>
+                    <p className="text5"></p>
                   </div>
               </div>
             </div>
@@ -254,6 +294,31 @@ const Home = () => {
                 </div>
               </div>
               <div className="body-main-page-four-projects">
+                <ul className="projects-ul">
+                  <Link href="/post/hrzs">
+                  <a>
+                  <li className="projects">
+                    <div className="projectsDiv">
+                        <p>红创助手</p>
+                    </div>
+                  </li>
+                  </a>
+                  </Link>
+                  <a href="https://nextjs-one-hazel.vercel.app/" target='_block'>
+                  <li className="projects">
+                  <div className="projectsDiv">
+                      <p>我的简历网站</p>
+                  </div>
+                  </li>
+                  </a>
+                  <a href="#" target='_block'>
+                  <li className="projects">
+                  <div className="projectsDiv">
+                      <p>敬请期待</p>
+                  </div>
+                  </li>
+                  </a>
+                </ul>
               </div>
               <div className="body-main-page-four-footer">
                 <div>
@@ -334,7 +399,6 @@ const Home = () => {
         </div>    */}
     </main>
     <footer></footer>     
-
    </>
   )
 }
