@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Link from 'next/link'
 
 class fourPage extends Component {
     
@@ -19,7 +20,7 @@ class fourPage extends Component {
               </div>
               <div className="body-main-page-four-projects">
                 <ul className="projects-ul">
-                  {/* <Link href="./hrzs.js"> */}
+                  <Link href="/components/hrzs">
                   <a>
                   <li className="projects">
                     <div className="projectsDiv">
@@ -27,7 +28,7 @@ class fourPage extends Component {
                     </div>
                   </li>
                   </a>
-                  {/* </Link> */}
+                  </Link>
                   <a href="https://nextjs-one-hazel.vercel.app/" target='_block'>
                   <li className="projects">
                   <div className="projectsDiv">
