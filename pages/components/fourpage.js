@@ -21,7 +21,7 @@ class fourPage extends Component {
               <div className="body-main-page-four-projects">
                 <ul className="projects-ul">
                   <Link href="/components/hrzs">
-                  <a>
+                  <a target='_block'>
                   <li className="projects">
                     <div className="projectsDiv">
                         <p>红创助手</p>

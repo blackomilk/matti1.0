@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
+import Typed from 'typed.js'
 
 class twoPage extends Component {
     
     componentDidMount() {
-      this.PageText()
+      setTimeout(() => {
+        this.PageText()
+      }, 3000);
     }
 
     PageText = () => {
@@ -37,11 +40,11 @@ class twoPage extends Component {
         showCursor: false,
         startDelay: 15000 // 延时一秒后在执行
       }
-      // const typed = new Typed(".text", option);
-      // const typed2 = new Typed(".text2", options);
-      // const typed3 = new Typed(".text3", optionss);
-      // const typed4 = new Typed(".text4", optionsss);
-      // const typed5 = new Typed(".text5", optionssss);
+      this.typed = new Typed(".text", option);
+      this.typed2 = new Typed(".text2", options);
+      this.typed3 = new Typed(".text3", optionss);
+      this.typed4 = new Typed(".text4", optionsss);
+      this.typed5 = new Typed(".text5", optionssss);
     }
    render() {
        return (

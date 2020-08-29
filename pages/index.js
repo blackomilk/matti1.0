@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import React, { Component } from 'react'
-import Typed from 'typed.js'
 import Swiper from 'swiper/swiper-bundle.min.js'
 import OnePage from './components/onepage'
 import TwoPage from './components/twopage'
@@ -25,7 +24,7 @@ class Home extends Component {
                 dynamicMainBullets: 2,
             },
             mousewheel: true,
-
+            sensitivity: 5,
             disableOnInteraction: true,
             // effect : 'fade',
             // fadeEffect: {
@@ -66,7 +65,20 @@ class Home extends Component {
       <link rel="icon" href="/matti.png" />
     </Head>
     <main>
-        
+      <header>
+        <div className="info">
+          <img src="/matti.png" className="icon"></img>
+        </div>
+        <div className="name">
+          <span>Matti</span>
+        </div>
+        <div className="music" id="bgcm" onClick={() => handleMusicUp()}>
+          <audio autoPlay  loop id="bgc">
+            {/* <source src="/MJ.mp3" type="audio/mpeg"></source> */}
+          </audio>
+          {/* <img src={musicImg} className="music-img"></img>  */}
+        </div>
+      </header>
         <div className='swiper-container'>
         {/* // className="body-main" 
         // id="swiper-pc"  */}
