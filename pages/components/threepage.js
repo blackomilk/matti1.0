@@ -2,9 +2,23 @@ import React, { Component } from 'react'
 
 class threePage extends Component {
     
-    componentDidMount() {
-    
-    }
+  // componentDidMount() {
+  //   window.addEventListener('resize',this.handleResize.bind(this))
+
+  // }
+  // componentWillUnmount() {
+  //   window.removeEventListener('resize', this.handleResize.bind(this))
+  // }
+
+  // handleResize = e => {
+  //   if(e.target.innerWidth <700) {
+  //     const icon = document.getElementsByClassName('skills')
+  //     icon.style.innerWidth="50px"
+  //     // icon.style.heigh="50px"
+  //     // icon.style.margin="3px"
+  //     // icon.style.perspective="100px"
+  //   }
+  // }
 
    render() {
        return (
@@ -19,7 +33,7 @@ class threePage extends Component {
               </div>
               <div className="body-main-page-three-skills">
                 <ul className="skills-ul">
-                <li className="skills">
+                <li className="skills" id="icon">
                   <div className="skillsDiv">
                     <div className="skills-icon">
                         <img src="/next.jpg"></img>
@@ -30,7 +44,7 @@ class threePage extends Component {
                       </div>
                   </div>
                   </li>
-                  <li className="skills">
+                  <li className="skills" id="icon">
                     <div className="skillsDiv">
                       <div className="skills-icon">
                         <img src="/react.png"></img>
@@ -42,7 +56,7 @@ class threePage extends Component {
                     </div>
                   
                   </li>
-                  <li className="skills">
+                  <li className="skills" id="icon">
                     <div className="skillsDiv"> 
                     <div className="skills-icon">
                       <img src="/jquery.png"></img>
@@ -54,7 +68,7 @@ class threePage extends Component {
                     </div>
                     
                   </li>
-                  <li className="skills">
+                  <li className="skills" id="icon">
                     <div className="skillsDiv"> 
                     <div className="skills-icon">
                       <img src="/html5.jpg"></img>
@@ -66,7 +80,7 @@ class threePage extends Component {
                     </div>
                     
                   </li>
-                  <li className="skills">
+                  <li className="skills" id="icon">
                     <div className="skillsDiv">
                     <div className="skills-icon">
                       <img src="/css3.jpg"></img>
@@ -78,7 +92,7 @@ class threePage extends Component {
                     </div>
                   
                   </li>
-                  <li className="skills">
+                  <li className="skills" id="icon">
                     <div className="skillsDiv">
                     <div className="skills-icon">
                       <img src="/es6.jpg"></img>
@@ -90,7 +104,7 @@ class threePage extends Component {
                     </div>
                  
                   </li>
-                  <li className="skills">
+                  <li className="skills" id="icon">
                     <div className="skillsDiv">
                     <div className="skills-icon">
                       <img src="/vue.png"></img>
@@ -102,7 +116,7 @@ class threePage extends Component {
                     </div>
                   
                   </li>
-                  <li className="skills">
+                  <li className="skills" id="icon">
                     <div className="skillsDiv">
                     <div className="skills-icon">
                       <img src="/git.png"></img>
@@ -114,7 +128,7 @@ class threePage extends Component {
                     </div>
                   
                   </li>
-                  <li className="skills">
+                  <li className="skills" id="icon">
                     <div className="skillsDiv"> 
                     <div className="skills-icon">
                       <img src="/bootstrap.png"></img>
@@ -126,7 +140,7 @@ class threePage extends Component {
                     </div>
                   
                   </li>
-                  <li className="skills">
+                  <li className="skills" id="icon">
                     <div className="skillsDiv">
                     <div className="skills-icon">
                       <img src="/xiaochengxu.jpg"></img>
@@ -138,7 +152,7 @@ class threePage extends Component {
                     </div>
                   
                   </li>
-                  <li className="skills">
+                  <li className="skills" id="icon">
                     <div className="skillsDiv">
                     <div className="skills-icon">
                       <img src="/node.png"></img>
@@ -150,7 +164,7 @@ class threePage extends Component {
                     </div>
                   
                   </li>
-                  <li className="skills">
+                  <li className="skills" id="icon">
                     <div className="skillsDiv">
                     <div className="skills-icon">
                       <img src="/webpack.png"></img>
