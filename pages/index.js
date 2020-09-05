@@ -13,6 +13,7 @@ class Home extends Component {
     this.twoPage = React.createRef();
     this.state = {
       isUp : true,
+      bgmImg : '/timg.jpeg',
     }
   }
 
@@ -23,15 +24,16 @@ class Home extends Component {
     this.swiper = new Swiper('.swiper-container', {
         grabCursor : true,
         direction: 'vertical',
-            speed:777,
+            speed:777,//切换速度
             pagination: {
                 el: '.swiper-pagination',
                 dynamicBullets: true,
                 dynamicMainBullets: 2,
             },
-            mousewheel: true,
-            sensitivity: 5,
-            rouchRatio: 1.3,
+            roundLengths : true, //宽高取整
+            mousewheel: true,//开启鼠标切换
+            sensitivity: 5,//鼠标滚轮的灵敏度
+            rouchRatio: 1,
             disableOnInteraction: true,
             on: {
               slideChangeTransitionEnd: function(){
@@ -43,6 +45,20 @@ class Home extends Component {
               //   console.log(progress);
               // },  
             },
+            breakpoints: { 
+              320: {  //当屏幕宽度大于等于320
+                // slidesPerView: 2,
+                // spaceBetween: 10
+              },
+              768: {  //当屏幕宽度大于等于768 
+                // slidesPerView: 3,
+                // spaceBetween: 20
+              },
+              1409: {  //当屏幕宽度大于等于1280
+                // slidesPerView: 4,
+                // spaceBetween: 30
+              }
+            }
 
     });
 }
@@ -64,12 +80,17 @@ class Home extends Component {
   } 
   if(audio != null) {
   if(audio.paused) {
-    setmusicImg('/timg.jpeg')
+    // setmusicImg('/timg.jpeg')
     audio.play();
     img.style.animationPlayState = "running"
+    this.setState({
+      bgmImg: '/timg.jpeg'
+    })
   } else {
-    setmusicImg('/bg.jpg')
     audio.pause();
+    this.setState({
+      bgmImg: '/zttimg.jpg'
+    })
     }
   }
 }
@@ -91,11 +112,11 @@ class Home extends Component {
         <div className="name">
           <span>Matti</span>
         </div>
-        <div className="music" id="bgcm" onClick={() => handleMusicUp()}>
+        <div className="music" id="bgcm" onClick={() => this.handleMusicUp()}>
           <audio autoPlay  loop id="bgc">
-            {/* <source src="/MJ.mp3" type="audio/mpeg"></source> */}
+            <source src="/MJ.mp3" type="audio/mpeg"></source>
           </audio>
-          {/* <img src={musicImg} className="music-img"></img>  */}
+          <img src={this.state.bgmImg} className="music-img"></img> 
         </div>
       </header>
         <div className='swiper-container'>

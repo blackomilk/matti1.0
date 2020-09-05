@@ -9,6 +9,18 @@ class TwoPage extends Component {
 
 }
     componentDidMount() {
+      window.addEventListener('resize',this.handleResize.bind(this))
+
+    }
+    componentWillUnmount() {
+      window.removeEventListener('resize', this.handleResize.bind(this))
+    }
+
+    handleResize = e => {
+      if(e.target.innerWidth <700) {
+        const title = document.getElementById('title')
+        title.style.margin="50% auto"
+      }
     }
 
     PageText = () => {
@@ -67,7 +79,7 @@ class TwoPage extends Component {
                     <br></br>
                     <strong>- ABOUT ME -</strong>
                   </div>
-                  <div className="body-main-page-two-bottomUp-title">
+                  <div className="body-main-page-two-bottomUp-title" id="title">
                     <p className="text"></p>
                     <p className="text2"></p>
                     <p className="text3"></p>

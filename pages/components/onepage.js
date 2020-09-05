@@ -4,12 +4,15 @@ class onePage extends Component {
 
     componentDidMount() {
       const logo = document.getElementById('logo')
-      
+      logo.style.backgroundPosition="-170px -170px"
+
       setTimeout(() => {
-        logo.style.transform="all 2.7s"
         logo.style.backgroundPosition="170px 170px"
-        logo.style.backgroundColor="#fff"
-      }, 1000);
+        setTimeout(() => {
+          logo.style.backgroundColor="#fff"
+        },500)
+      },1100)
+      
     }
 
    render() {
