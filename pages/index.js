@@ -109,9 +109,9 @@ class Home extends Component {
         <div className="info">
           <img src="/matti.png" className="icon"></img>
         </div>
-        <div className="name">
+        {/* <div className="name">
           <span>Matti</span>
-        </div>
+        </div> */}
         <div className="music" id="bgcm" onClick={() => this.handleMusicUp()}>
           <audio autoPlay  loop id="bgc">
             <source src="/MJ.mp3" type="audio/mpeg"></source>

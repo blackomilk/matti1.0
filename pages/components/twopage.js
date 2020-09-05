@@ -19,7 +19,9 @@ class TwoPage extends Component {
     handleResize = e => {
       if(e.target.innerWidth <700) {
         const title = document.getElementById('title')
+        const about = document.getElementById('about')
         title.style.margin="50% auto"
+        about.style.fontSize="2em"
       }
     }
 
@@ -74,7 +76,7 @@ class TwoPage extends Component {
        return (
            <>
             <div className="body-main-page-two-bottom">
-                  <div className="body-main-page-two-bottomUp-about">
+                  <div className="body-main-page-two-bottomUp-about" id="about">
                     <strong>关于我</strong>
                     <br></br>
                     <strong>- ABOUT ME -</strong>
