@@ -8,16 +8,22 @@ import FourPage from './components/fourpage'
 import FivePage from './components/fivepage'
 
 class Home extends Component {
+  constructor() {
+    super();
+    this.twoPage = React.createRef();
+    this.state = {
+      isUp : true,
+    }
+  }
 
   componentDidMount() {
+
+    let a=this;
+    
     this.swiper = new Swiper('.swiper-container', {
         grabCursor : true,
         direction: 'vertical',
-            speed:2500,
-            // autoplay: {
-            //     // delay: 3000,
-            //     // waitForTransition: false,
-            // },//可选选项，自动滑动
+            speed:777,
             pagination: {
                 el: '.swiper-pagination',
                 dynamicBullets: true,
@@ -25,14 +31,27 @@ class Home extends Component {
             },
             mousewheel: true,
             sensitivity: 5,
+            rouchRatio: 1.3,
             disableOnInteraction: true,
-            // effect : 'fade',
-            // fadeEffect: {
-            //   crossFade: true,
-            // }
+            on: {
+              slideChangeTransitionEnd: function(){
+                if(this.activeIndex === 1 && a.state.isUp === true) {
+                  a.textIsUp()
+                }
+              },
+              // progress: function(swiper,progress){
+              //   console.log(progress);
+              // },  
+            },
 
     });
 }
+    textIsUp() {
+      this.twoPage.current.PageText();
+      this.setState({
+        isUp:false
+      })
+  }
 
   handleMusicUp = ()  =>{
   const audio = document.getElementById('bgc');
@@ -91,7 +110,7 @@ class Home extends Component {
             </div>
             <div className="swiper-slide">
               <div className="body-main-page-two">
-                <TwoPage />
+                <TwoPage ref={this.twoPage}/>
               </div>
             </div>
             <div className="swiper-slide">

@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import Typed from 'typed.js'
 
-class twoPage extends Component {
-    
+class TwoPage extends Component {
+  static defaultProps = {
+  }
+  constructor() {
+    super();
+
+}
     componentDidMount() {
-      setTimeout(() => {
-        this.PageText()
-      }, 3000);
     }
 
     PageText = () => {
@@ -14,31 +16,41 @@ class twoPage extends Component {
         strings: ["-您好，我叫司勇行"],
         typeSpeed: 80,
         showCursor: false,
+        loop: false,
+        smartBackspace: true,
       }
       const options = {
         strings: ["一名行走在前端路上的程序猿，自然交互，恰当视觉，渴望打造一款还不错的产品与您分享"],
         typeSpeed: 80,
         showCursor: false,
-        startDelay: 1000 // 延时一秒后在执行
+        startDelay: 1000, // 延时一秒后在执行
+        loop: false
+
       }
       const optionss = {
         strings: ["目前就职于国内知名儿童健康管理公司，从事网络运维相关工作，闲暇之余学习前端知识"],
         typeSpeed: 80,
         showCursor: false,
-        startDelay: 5500 // 延时一秒后在执行
+        startDelay: 5500, // 延时一秒后在执行
+        loop: false
+
     
       }
       const optionsss = {
         strings: ["曾经使用React+es6+TypeScrip+Ant Desgin负责某红人项目的管理后台搭建工作"],
         typeSpeed: 80,
         showCursor: false,
-        startDelay: 9500 // 延时一秒后在执行
+        startDelay: 9500, // 延时一秒后在执行
+        loop: false
+
       }
       const optionssss = {
         strings: ["此项目使用Next.js+React搭建"],
         typeSpeed: 80,
         showCursor: false,
-        startDelay: 15000 // 延时一秒后在执行
+        startDelay: 15000, // 延时一秒后在执行
+        loop: false,
+        
       }
       this.typed = new Typed(".text", option);
       this.typed2 = new Typed(".text2", options);
@@ -68,4 +80,4 @@ class twoPage extends Component {
    }
 }
 
-export default twoPage;
+export default TwoPage;

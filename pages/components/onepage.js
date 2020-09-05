@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
 
 class onePage extends Component {
-    
+
     componentDidMount() {
-    
+      const logo = document.getElementById('logo')
+      
+      setTimeout(() => {
+        logo.style.transform="all 2.7s"
+        logo.style.backgroundPosition="170px 170px"
+        logo.style.backgroundColor="#fff"
+      }, 1000);
     }
 
    render() {
@@ -12,7 +18,7 @@ class onePage extends Component {
             <div className="body-main-page-one-bottom">
                 <div className="body-main-page-one-bottomDown">
                 <div className="body-main-page-one-bottomUp">
-                  <div className="body-main-page-one-bottomUp-logo">
+                  <div className="body-main-page-one-bottomUp-logo" id="logo">
                     <img src="/mattti.png"></img>
                   </div>
                   <div className="body-main-page-one-bottomUp-title">
