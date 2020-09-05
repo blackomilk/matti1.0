@@ -17,12 +17,12 @@ class TwoPage extends Component {
     }
 
     handleResize = e => {
-      if(e.target.innerWidth <700) {
-        const title = document.getElementById('title')
-        const about = document.getElementById('about')
-        title.style.margin="50% auto"
-        about.style.fontSize="2em"
-      }
+      // if(e.target.innerWidth <700) {
+      //   const title = document.getElementById('title')
+      //   const about = document.getElementById('about')
+      //   title.style.margin="50% auto"
+      //   about.style.fontSize="2em"
+      // }
     }
 
     PageText = () => {

@@ -12,6 +12,15 @@ class onePage extends Component {
           logo.style.backgroundColor="#fff"
         },500)
       },1100)
+      window.addEventListener('resize',this.handleResize.bind(this))
+
+    }
+
+    componentWillUnmount() {
+      window.removeEventListener('resize', this.handleResize.bind(this))
+    }
+
+    handleResize = e => {
       
     }
 
@@ -25,7 +34,7 @@ class onePage extends Component {
                     <img src="/mattti.png"></img>
                   </div>
                   <div className="body-main-page-one-bottomUp-title">
-                    <p>Hello I‘m Matti</p>
+                    <p id="iam">Hello I‘m Matti</p>
                     <p>正在努力成为一名前端开发工程师</p>
                     <p>@2020</p>
                   </div>

@@ -179,7 +179,7 @@ class threePage extends Component {
                 </ul>
               </div>
               <div className="body-main-page-three-footer">
-                <div>
+                <div className="three-footer-div">
                 <strong>-----更多技能 正在充电-----</strong>
                 </div>
               </div>
