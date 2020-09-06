@@ -156,12 +156,12 @@
       -40deg,
       transparent,
       transparent 70px,
-      hsla(0,0%,100%,.6) 90px,
-      hsla(0,0%,100%,.6) 110px,
+      rgba(0, 178, 179,.3) 90px,
+      rgba(0, 178, 179,.3) 110px,
       transparent 130px);
     background-repeat: no-repeat !important;
-    -webkit-transition: all 1s;
-    transition: all 1s;
+    -webkit-transition: all 1.3s;
+    transition: all 1.3s;
     overflow: hidden;
     border-radius: 50%;
     cursor: pointer;
