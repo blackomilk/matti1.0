@@ -5,13 +5,12 @@ class OnePage extends Component {
     componentDidMount() {
       const logo = document.getElementById('logo')
       logo.style.backgroundPosition="-170px -170px"
-
+      logo.style.backgroundColor="#fff"
       setTimeout(() => {
         logo.style.backgroundPosition="170px 170px"
-        setTimeout(() => {
-          logo.style.backgroundColor="#fff"
-        },300)
-      },200)
+        // setTimeout(() => {
+        // },400)
+      },300)
       window.addEventListener('resize',this.handleResize.bind(this))
 
     }
