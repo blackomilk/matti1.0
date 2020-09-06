@@ -9,7 +9,7 @@ class OnePage extends Component {
         logo.style.backgroundColor="#fff"
         setTimeout(() => {
           logo.style.backgroundPosition="170px 170px"
-        },300)
+        },500)
       },100)
       window.addEventListener('resize',this.handleResize.bind(this))
 
