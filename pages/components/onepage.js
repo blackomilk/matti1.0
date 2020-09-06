@@ -10,8 +10,8 @@ class onePage extends Component {
         logo.style.backgroundPosition="170px 170px"
         setTimeout(() => {
           logo.style.backgroundColor="#fff"
-        },500)
-      },1100)
+        },700)
+      },900)
       window.addEventListener('resize',this.handleResize.bind(this))
 
     }
