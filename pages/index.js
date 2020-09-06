@@ -41,25 +41,7 @@ class Home extends Component {
                   a.textIsUp()
                 }
               },
-              // progress: function(swiper,progress){
-              //   console.log(progress);
-              // },  
             },
-            breakpoints: { 
-              320: {  //当屏幕宽度大于等于320
-                // slidesPerView: 2,
-                // spaceBetween: 10
-              },
-              768: {  //当屏幕宽度大于等于768 
-                // slidesPerView: 3,
-                // spaceBetween: 20
-              },
-              1409: {  //当屏幕宽度大于等于1280
-                // slidesPerView: 4,
-                // spaceBetween: 30
-              }
-            }
-
     });
 }
     textIsUp() {
@@ -76,9 +58,10 @@ class Home extends Component {
   if(img.style.animationPlayState = "running") {
   img.style.animationPlayState = "paused"
   img.style.webkitAnimationPlayState = "paused"
-  // console.log("暂停状态",img.style.animationPlayState)
+  console.log("暂停状态",img.style.animationPlayState)
   } 
   if(audio != null) {
+    // audio.play();
   if(audio.paused) {
     // setmusicImg('/timg.jpeg')
     audio.play();
@@ -109,12 +92,9 @@ class Home extends Component {
         <div className="info">
           <img src="/matti.png" className="icon"></img>
         </div>
-        {/* <div className="name">
-          <span>Matti</span>
-        </div> */}
         <div className="music" id="bgcm" onClick={() => this.handleMusicUp()}>
           <audio autoPlay  loop id="bgc">
-            <source src="/MJ.mp3" type="audio/mpeg"></source>
+            <source src="/bgm.mp3" type="audio/mpeg"></source>
           </audio>
           <img src={this.state.bgmImg} className="music-img"></img> 
         </div>

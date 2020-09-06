@@ -58,6 +58,9 @@ class hrzs extends Component {
                width: 100%;
                height: 100%;
            }
+           .swiper-slide {
+               display: flex;
+           }
            .swiper-slide img {
                position: absolute;
                margin: 3% 5%;
@@ -65,6 +68,19 @@ class hrzs extends Component {
                width: 90%;
                height: 90%;
            }
+           @media screen and (min-width:320px) and (max-width:639px){
+            .swiper-slide {
+
+            }
+            .swiper-slide img {
+                align-self: center;
+                width: auto;
+                height: 65%;
+                margin: 0 60%;
+                transform: rotateZ(90deg) rotateX(-50deg);
+
+            }
+            }
        `}</style>
            </>
        )
