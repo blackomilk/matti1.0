@@ -286,7 +286,7 @@
       width: 70%;
     }
     .body-main-page-two-bottomUp-title {
-      margin: 65% auto;
+      margin: 50% auto;
       text-align: left;
       /* background-color: rgba(9, 34, 63, 0.2) !important; */
     }
@@ -416,7 +416,7 @@
       margin: 5px;
       font-size: 0.3em;
     }
-    .skills-hide {
+    .skills-hide p {
       font-size: 1.3em;
     }
     .body-main-page-three-footer div,
