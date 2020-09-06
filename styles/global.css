@@ -415,16 +415,16 @@
       width: 25%;
       height: auto;
       margin: 5px;
-      font-size: 0.3em;
+      font-size: 0.5em;
     }
     .skills-hide p {
-      font-size: 1.3em;
+      font-size: 1.5em;
     }
     .body-main-page-three-footer div,
     .body-main-page-four-footer div,
     .body-main-page-five-footer div
     {
-      font-size: 0.3em;
+      font-size: 0.5em;
     }
     .skillsDiv:hover .skills-icon{
       transform-origin: 50% 50% -35px;
@@ -720,6 +720,6 @@
       width: 210px;
       height: 210px;
       backface-visibility: hidden;
-      top: 33px;
+      top: 30px;
     }
   }
