@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class onePage extends Component {
+class OnePage extends Component {
 
     componentDidMount() {
       const logo = document.getElementById('logo')
@@ -46,4 +46,4 @@ class onePage extends Component {
    }
 }
 
-export default onePage;
+export default OnePage;

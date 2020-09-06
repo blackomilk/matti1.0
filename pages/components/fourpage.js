@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
 
-class fourPage extends Component {
+class FourPage extends Component {
     
     componentDidMount() {
     
@@ -56,4 +56,4 @@ class fourPage extends Component {
    }
 }
 
-export default fourPage;
+export default FourPage;

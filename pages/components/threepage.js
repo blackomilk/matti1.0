@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class threePage extends Component {
+class ThreePage extends Component {
     
   // componentDidMount() {
   //   window.addEventListener('resize',this.handleResize.bind(this))
@@ -189,4 +189,4 @@ class threePage extends Component {
    }
 }
 
-export default threePage;
+export default ThreePage;
