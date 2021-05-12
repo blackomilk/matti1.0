@@ -12,7 +12,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-media": "^1.10.0",
-    "swiper": "^6.1.2",
+    "swiper": "^6.5.1",
     "typed.js": "^2.0.11"
   },
   "devDependencies": {
